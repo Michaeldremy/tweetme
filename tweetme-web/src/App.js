@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 
-import {TweetsList} from './tweets'
+import {TweetsComponent} from './tweets'
 
 function App() {
 
   return (
     <div className="App">
       <div>
-        <TweetsList />
+        <TweetsComponent />
       </div>
     </div>
   );
