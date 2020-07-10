@@ -10,10 +10,11 @@ if (appEl) {
   ReactDOM.render( <App />, appEl);
 }
 
+const e = React.createElement
 const tweetsEl = document.getElementById("tweetme2")
-
 if (tweetsEl) {
-  ReactDOM.render( <TweetsComponent />, tweetsEl);
+  ReactDOM.render(
+    e(TweetsComponent, tweetsEl.dataset), tweetsEl);
 }
 
 // If you want your app to work offline and load faster, you can change
