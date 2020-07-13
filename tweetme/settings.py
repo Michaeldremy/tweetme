@@ -151,9 +151,9 @@ if DEBUG:
         'rest_framework.renderers.BrowsableAPIRenderer',
     ]
     # Delete the autentication class below when going into production
-    DEFAULT_AUTHENTICATION_CLASSES += [
-        'tweetme.rest_api.dev.DevAuthentication'
-    ]
+    # DEFAULT_AUTHENTICATION_CLASSES += [
+    #     'tweetme.rest_api.dev.DevAuthentication'
+    # ]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': DEFAULT_AUTHENTICATION_CLASSES,
